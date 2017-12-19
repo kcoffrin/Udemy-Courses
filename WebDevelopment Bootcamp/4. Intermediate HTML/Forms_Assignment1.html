@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Assignment: Registration</title>
+</head>
+<body>
+
+<h1>Registration Form</h1>
+
+<!-- Name/Information Form -->
+<form> 
+<div>
+<label for="First Name">First Name: </label>
+<input id="First Name" type="text" name="First Name" placeholder="John" required>
+
+<label for="Last Name">Last Name: </label>
+<input id="Last Name" type="text" name="Last Name" placeholder="Smith" required>
+</div>
+
+<!-- Radio Button: Gender Form -->
+<div>
+<label for="male">Male </label>
+<input id="male" type="radio" name="gender" value="Male" >
+
+<label for="female">Female </label>
+<input id="female" type="radio" name="gender" value="Female">	
+
+<label for="other">Other </label>
+<input id="other" type="radio" name="gender" value="Other">	
+</div>
+
+<!-- Credentials Form -->
+<div> 
+<label> 
+	Email: 
+<input id="Email" type="email" name="Email" placeholder="Your Email" required>
+</label>
+
+<label> 
+	Password: 
+<input id="Password" type="password" name="Password" placeholder="Your Password" required pattern=".{5,10}" required title="Password must be between 5 to 10 characters">
+</label>
+</div>
+
+<div>
+	<label>
+	Birthday: 
+	<select id="Month" name="Month">
+		<option value="Month">Month</option>
+		<option value="Jan">Jan</option></div>
+		<option value="Feb">Feb</option>
+	</select>
+
+	<select name="Day">
+		<option value="Day">Day</option></div>
+		<option value="1">1</option>
+		<option value="2">2</option>
+	</select>
+
+	<select name="Year">
+		<option value="Year">Year</option>
+		<option value="1977">1977</option>
+		<option value="1978">1978</option>
+	</select>
+	</label>
+</div>
+
+<div>
+	<label for="Terms">I agree to the terms and conditions</label>
+	<input id="Terms" type="checkbox" name="terms">
+
+</div>
+
+<div>
+	<input type="submit" name="submit">
+</div>
+</form>
+
+</body>
+</html>
