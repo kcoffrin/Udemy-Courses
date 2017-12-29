@@ -22,5 +22,11 @@ namespace MethodOverloading
             dNumber += aNumber;
 
         }
+
+        public static void Sum(int aNumber, double dNum = 5.5)
+        {
+            number += aNumber;
+            dNumber += dNum;
+        }
     }
 }

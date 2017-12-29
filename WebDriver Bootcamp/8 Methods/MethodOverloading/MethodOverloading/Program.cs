@@ -15,6 +15,10 @@ namespace MethodOverloading
 
             Helper.Sum(10.5);
             Console.WriteLine(Helper.dNumber);
+
+            Helper.Sum(10, 10.7);
+            Console.WriteLine(Helper.number);
+            Console.WriteLine(Helper.dNumber);
         }
     }
 }
