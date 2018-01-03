@@ -25,5 +25,15 @@ namespace Inheritance
             // Example:  In Full Time Class, have access to base class objects
             return FirstName + " " + LastName + " is part time";
         }
+
+        // Do not need to run this override as you are using a virtual
+        // If this is abstract you need to over ride. 
+
+        //public override void RunPayroll()
+        //{
+        //    Console.WriteLine("This employee's gets {0:C} per hour", HourlyRate);
+        //}
+
+      
     }
 }

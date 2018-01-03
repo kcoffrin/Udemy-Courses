@@ -36,5 +36,10 @@ namespace Inheritance
             // Example:  In Full Time Class, have access to base class objects
             return FirstName + " " + LastName + " is full time";
         }
+
+        public override void RunPayroll()
+        {
+            Console.WriteLine("This employee's salary is {0:C}", SalaryRate);
+        }
     }
 }

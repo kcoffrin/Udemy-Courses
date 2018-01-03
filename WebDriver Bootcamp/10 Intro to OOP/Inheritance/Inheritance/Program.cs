@@ -38,9 +38,12 @@ namespace Inheritance
             lists.Add(newEmp);
             lists.Add(newPT);
 
+
             foreach (Employee emp in lists)
             {
                 Console.WriteLine(emp.ToString());
+                //Call the RUNPAYROLL abstract method polymorphically.
+                emp.RunPayroll();
 
             }
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Inheritance
 {
-    class Employee
+    abstract class Employee
     {
         // Constructor:  needs to be public and the same name as the class
         public Employee(string first, string last, string phone)
@@ -20,5 +20,14 @@ namespace Inheritance
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string PhoneNo { get; set; }
+
+        // Adjusted to Virtual by changing Override to Virtual in method instantiation
+        // Need to provide basic implementation for our base class
+        // Need implementation in base class to be specific, not always possible
+
+        public virtual void RunPayroll()
+        {
+            Console.WriteLine("Base class payroll method");
+        }
     }
 }
